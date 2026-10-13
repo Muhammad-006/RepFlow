@@ -1,0 +1,27 @@
+{
+ "voice": "F",
+ "note": "the v2 voice \u2014 older and deeper, kept for comparison",
+ "duration": {
+  "calibrating": 2.543,
+  "lost_tracking": 2.206,
+  "rep_good": 1.324,
+  "tempo_cue": 1.962,
+  "goal_reached": 1.324,
+  "set_complete": 1.474,
+  "pu_depth": 1.405,
+  "pu_hip_sag": 2.043,
+  "pu_hip_pike": 1.753,
+  "pu_lockout": 1.347,
+  "sq_depth": 1.161,
+  "sq_chest": 1.207,
+  "sq_knees": 1.149,
+  "sq_stand": 1.312,
+  "pl_sag": 1.115,
+  "pl_pike": 1.277,
+  "pl_good": 1.486,
+  "pl_broken": 1.254,
+  "pl_half": 1.324,
+  "pl_30": 1.01,
+  "pl_60": 1.115
+ }
+}

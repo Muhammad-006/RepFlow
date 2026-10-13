@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Local app data and build output
+client/storage/
+client/build/
+client/build_config.py
+
+# Server identity key and any other secrets (the key normally lives in ~/.repflow, outside the repo)
+.repflow/
+server_identity*
+*.key
+*.pem
+.env
+
+# Large downloaded voice models used only for re-rendering cues
+tools/.voices/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

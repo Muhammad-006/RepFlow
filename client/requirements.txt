@@ -1,0 +1,6 @@
+# Phone app dependencies (kept in sync with pyproject.toml).
+# Only flet + extensions -- these are what `flet build apk` bundles.
+flet>=0.86.0,<0.87.0
+flet-audio>=0.86.0,<0.87.0
+flet-camera>=0.86.0,<0.87.0
+flet-permission-handler>=0.86.0,<0.87.0

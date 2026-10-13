@@ -1,0 +1,45 @@
+[project]
+name = "repflow"
+version = "3.0.0"
+description = "RepFlow - AI form coach for push-ups, squats and planks. The phone captures and encrypts; the coaching model runs on ../server and keeps nothing."
+readme = "../README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flet>=0.86.0,<0.87.0",
+    "flet-audio>=0.86.0,<0.87.0",
+    "flet-camera>=0.86.0,<0.87.0",
+    "flet-permission-handler>=0.86.0,<0.87.0",
+]
+# Keep this list to flet + its extensions only: numpy/opencv/torch have no
+# Android wheels, which is exactly why the AI runs on the laptop instead.
+
+[tool.uv]
+package = false
+
+[tool.flet]
+product = "RepFlow"
+org = "com.repflow"
+company = "RepFlow"
+copyright = "RepFlow 2026"
+permissions = ["camera"]
+
+[tool.flet.app]
+exclude = ["storage", "__pycache__", "build_config.example.py"]
+
+[tool.flet.splash]
+color = "#05070D"
+dark_color = "#05070D"
+icon_bgcolor = "#05070D"
+icon_dark_bgcolor = "#05070D"
+
+[tool.flet.android]
+adaptive_icon_background = "#05070D"
+
+[tool.flet.android.permission]
+"android.permission.CAMERA" = true
+"android.permission.INTERNET" = true
+"android.permission.ACCESS_NETWORK_STATE" = true
+"android.permission.ACCESS_WIFI_STATE" = true
+"android.permission.CHANGE_WIFI_MULTICAST_STATE" = true
+"android.permission.WAKE_LOCK" = true
+"android.permission.VIBRATE" = true

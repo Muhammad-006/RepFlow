@@ -1,0 +1,17 @@
+[project]
+name = "repflow-coach-server"
+version = "3.0.0"
+description = "RepFlow coach server -- encrypted frame intake, pose detection, per-exercise coaching. Backend only: no dashboard, no video feed, nothing written to disk."
+readme = "../README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "opencv-python>=4.8",
+    "onnxruntime>=1.17",
+]
+
+[project.optional-dependencies]
+gpu = ["ultralytics>=8.3"]
+
+[tool.uv]
+package = false
